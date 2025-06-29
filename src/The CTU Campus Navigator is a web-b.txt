@@ -1,0 +1,12 @@
+The CTU Campus Navigator is a web-based application deployed using Firebase Hosting, allowing public access with efficient performance. The deployment involved setting up tools like Node.js, Firebase CLI, and initializing the Firebase project with hosting configured as a Single Page Application. After building the React app using npm run build, the project was successfully deployed and verified via a live hosting URL.
+
+Functionally, the app helps users navigate the Cebu Technological University campus by offering turn-by-turn directions and building-specific maps. Users can either select a location from  or scan a QR code for direct access. Each building is assigned a unique URL using hash-based routing for easy sharing. The interface is responsive and user-friendly across all devices, making it ideal for both students and visitors.
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,5 @@
+cd campus-navigator 
+npm run build
+firebase login
+firebase init
+firebase deploy --only hosting
