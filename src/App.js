@@ -153,7 +153,7 @@ const App = () => {
             ]
         },
         {
-            name: 'SCIENCE BUILDING',
+            name: 'SCIENCE TECHNOLOGY BUILDING',
             route: [
                 'Start at the Back Gate.',
                 'Walk straight across the open field',
