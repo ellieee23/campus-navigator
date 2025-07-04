@@ -13,9 +13,9 @@ const fromSlug = (slug) => {
     }
     // Handle "office"
     if (slug.includes('cashier') || slug.includes('registrar')) {
-         const parts = slug.split('-');
-         const capitalizedParts = parts.map(part => part.charAt(0).toUpperCase() + part.slice(1));
-         return capitalizedParts.join(' ') + ' Office';
+        const parts = slug.split('-');
+        const capitalizedParts = parts.map(part => part.charAt(0).toUpperCase() + part.slice(1));
+        return capitalizedParts.join(' ') + ' Office';
     }
     const parts = slug.split('-');
     const capitalizedParts = parts.map(part => part.charAt(0).toUpperCase() + part.slice(1));
@@ -99,8 +99,8 @@ const App = () => {
             ],
             mapPosition: { top: '35%', left: '60%' },
             mapImageUrl: '', // Set to empty string as we use video for map
-            mapVideoUrl: 'https://i.imgur.com/GW9Lk3Y.mp4', // Main video for map background
-            photoUrl: 'https://i.imgur.com/A0m1l13.jpeg', // Updated direct link
+            mapVideoUrl: 'https://res.cloudinary.com/dtvbrh783/video/upload/v1751609188/CCICT_BUILDING_iyvr6l.mp4',
+            photoUrl: 'https://res.cloudinary.com/dtvbrh783/image/upload/v1751608654/ict_zg7255.jpg',
             isPhotoVideo: false, // Indicate if photoUrl is a video
             pathCoordinates: [
                 { x: 20, y: 90 },
@@ -120,8 +120,8 @@ const App = () => {
             ],
             mapPosition: { top: '70%', left: '25%' },
             mapImageUrl: '', // Set to empty as using video for map
-            mapVideoUrl: 'https://i.imgur.com/bHDlRBb.mp4',
-            photoUrl: 'https://i.imgur.com/HhC8aQn.png', // Updated direct link
+            mapVideoUrl: 'https://res.cloudinary.com/dtvbrh783/video/upload/v1751609245/ENGINEERING_BUILDING_qy73dm.mp4',
+            photoUrl: '', // Removed photo URL to hide "View Building Photo" button
             isPhotoVideo: false,
             pathCoordinates: [ // Sample path for animation
                 { x: 10, y: 10 },
@@ -141,8 +141,8 @@ const App = () => {
             ],
             mapPosition: { top: '20%', left: '40%' },
             mapImageUrl: '', // Set to empty as using video for map
-            mapVideoUrl: 'https://i.imgur.com/oVApxlH.mp4',
-            photoUrl: 'https://i.imgur.com/aSrT2Ld.png', // Updated direct link
+            mapVideoUrl: 'https://res.cloudinary.com/dtvbrh783/video/upload/v1751609171/ADMIN_BUILDING_gbdryl.mp4',
+            photoUrl: 'https://res.cloudinary.com/dtvbrh783/image/upload/v1751608669/adminnnnn_eexubx.jpg',
             isPhotoVideo: false,
             pathCoordinates: [
                 { x: 31, y: 19 },
@@ -163,8 +163,8 @@ const App = () => {
             ],
             mapPosition: { top: '55%', left: '80%' },
             mapImageUrl: '', // Set to empty as using video for map
-            mapVideoUrl: 'https://i.imgur.com/hEyI4B9.mp4',
-            photoUrl: 'https://i.imgur.com/CBACGEf.png', // Updated direct link
+            mapVideoUrl: 'https://res.cloudinary.com/dtvbrh783/video/upload/v1751609258/ST_BUILDING_jxvwzs.mp4',
+            photoUrl: 'https://res.cloudinary.com/dtvbrh783/image/upload/v1751608588/svience_mg2jmg.jpg',
             isPhotoVideo: false,
             pathCoordinates: [ // Sample path for animation
                 { x: 90, y: 90 },
@@ -184,8 +184,8 @@ const App = () => {
             ],
             mapPosition: { top: '25%', left: '50%' },
             mapImageUrl: '', // Set to empty as using video for map
-            mapVideoUrl: 'https://i.imgur.com/Gbrau7N.mp4',
-            photoUrl: 'https://i.imgur.com/DqCNySW.png', // Updated direct link
+            mapVideoUrl: 'https://res.cloudinary.com/dtvbrh783/video/upload/v1751609213/CN_BUILDING_u5d7vq.mp4',
+            photoUrl: 'https://res.cloudinary.com/dtvbrh783/image/upload/v1751608570/cn_q9wjcp.jpg',
             isPhotoVideo: false,
             pathCoordinates: [ // Sample path for animation
                 { x: 50, y: 90 },
@@ -205,8 +205,8 @@ const App = () => {
             ],
             mapPosition: { top: '40%', left: '20%' },
             mapImageUrl: '', // Set to empty as using video for map
-            mapVideoUrl: 'https://i.imgur.com/tsjs7Op.mp4', // Reverted to original video URL
-            photoUrl: '', // No specific photo for button
+            mapVideoUrl: 'https://res.cloudinary.com/dtvbrh783/video/upload/v1751609220/COT_BUILDING_suh3j4.mp4',
+            photoUrl: '', // Removed photo URL to hide "View Building Photo" button
             isPhotoVideo: false,
             pathCoordinates: [ // Sample path for animation
                 { x: 20, y: 50 },
@@ -225,8 +225,8 @@ const App = () => {
             ],
             mapPosition: { top: '75%', left: '70%' },
             mapImageUrl: '', // Set to empty as using video for map
-            mapVideoUrl: 'https://i.imgur.com/jKF2PsR.mp4', // Reverted to original video URL
-            photoUrl: '', // No specific photo for button
+            mapVideoUrl: 'https://res.cloudinary.com/dtvbrh783/video/upload/v1751609176/AUTOMATION_BUILDING_g4vddj.mp4',
+            photoUrl: '', // Removed photo URL to hide "View Building Photo" button
             isPhotoVideo: false,
             pathCoordinates: [ // Sample path for animation
                 { x: 70, y: 70 },
@@ -241,14 +241,13 @@ const App = () => {
                 'Walk straight then turn right at the first pathway.',
                 'Walk straight then slight deviation to the right',
                 'After passing the Automation building, continue past the Admin building then turn right.',
-                'The Clinic office is a small, standalone building on your right', 
-                'marked with a red cross.',
-                'You have arrived at the CLINIC BUILDING.',
+                'The Medical Dental Clinic is a small, multi-tenant building on your right.',
+                'You have arrived at the CLINIC office.',
             ],
             mapPosition: { top: '30%', left: '15%' },
             mapImageUrl: '', // Set to empty as using video for map
-            mapVideoUrl: 'https://i.imgur.com/wB8LlTl.mp4', // Reverted to original video URL
-            photoUrl: '', // No specific photo for button
+            mapVideoUrl: 'https://res.cloudinary.com/dtvbrh783/video/upload/v1751609206/CLINIC_OFFICE_ai0wqe.mp4',
+            photoUrl: '', // Removed photo URL to hide "View Building Photo" button
             isPhotoVideo: false,
             pathCoordinates: [ // Sample path for animation
                 { x: 15, y: 30 },
@@ -259,7 +258,7 @@ const App = () => {
         {
             name: 'EDUCATION BUILDING',
             route: [
-               'Start at the Back Gate.',
+                'Start at the Back Gate.',
                 'Walk straight then turn right at the first pathway.',
                 'Walk straight then slight deviation to the left',
                 'After passing the Automation building, continue past the Admin building then turn right.',
@@ -267,8 +266,8 @@ const App = () => {
             ],
             mapPosition: { top: '50%', left: '30%' },
             mapImageUrl: '', // Set to empty as using video for map
-            mapVideoUrl: 'https://i.imgur.com/1XxDi5I.mp4',
-            photoUrl: 'https://i.imgur.com/v3jgF0h.png', // Updated direct link
+            mapVideoUrl: 'https://res.cloudinary.com/dtvbrh783/video/upload/v1751609228/EDUCATION_BUILDING_wxiopn.mp4',
+            photoUrl: 'https://res.cloudinary.com/dtvbrh783/image/upload/v1751608554/educ_jdb03e.jpg',
             isPhotoVideo: false,
             pathCoordinates: [ // Sample path for animation
                 { x: 30, y: 50 },
@@ -287,8 +286,8 @@ const App = () => {
             ],
             mapPosition: { top: '25%', left: '90%' },
             mapImageUrl: '', // Set to empty as using video for map
-            mapVideoUrl: 'https://i.imgur.com/tXxT5Xl.mp4',
-            photoUrl: 'https://i.imgur.com/2lh5cdL.png', // Updated direct link
+            mapVideoUrl: 'https://res.cloudinary.com/dtvbrh783/video/upload/v1751609253/GRADUATE_BUILDING_kopkid.mp4',
+            photoUrl: 'https://res.cloudinary.com/dtvbrh783/image/upload/v1751608599/graduate_ajbpdo.jpg',
             isPhotoVideo: false,
             pathCoordinates: [ // Sample path for animation
                 { x: 90, y: 25 },
@@ -494,12 +493,12 @@ const App = () => {
             {/* Top background layer */}
             <div
                 className="absolute top-0 left-0 w-full h-1/2 bg-cover bg-center"
-                style={{ backgroundImage: `url('https://i.imgur.com/eZ78HY2.png')` }}
+                style={{ backgroundImage: `url('https://res.cloudinary.com/dtvbrh783/image/upload/v1751609852/495264106_919129223687428_6136402725334978229_n_tihq9l.png')` }}
             ></div>
             {/* Bottom background layer */}
             <div
                 className="absolute bottom-0 left-0 w-full h-1/2 bg-cover bg-center"
-                style={{ backgroundImage: `url('https://i.imgur.com/UBgSvk4.png')` }}
+                style={{ backgroundImage: `url('https://res.cloudinary.com/dtvbrh783/image/upload/v1751609866/506803316_572325982338762_8652178754255906899_n_efygn0.png')` }}
             ></div>
             {/* Overlay for better readability over BOTH backgrounds */}
             <div className="absolute inset-0 bg-blue-900 opacity-60"></div>
@@ -512,7 +511,7 @@ const App = () => {
                         {/* Main Logo */}
                         <div className="flex justify-center mb-2">
                             <img
-                                src="https://i.imgur.com/0Hh2u2k.png" // Main CTU Navigator Logo
+                                src="https://res.cloudinary.com/dtvbrh783/image/upload/v1751608691/navctulogo_rgrely.png" // Updated with Cloudinary logo URL
                                 alt="CTU Navigator Logo"
                                 className="h-36 w-auto rounded-full shadow-lg"
                                 onError={(e) => {
@@ -564,11 +563,12 @@ const App = () => {
                                 ref={mapContainerRef}
                                 className="relative w-full h-[500px] md:h-[700px] bg-gray-100 rounded-xl overflow-hidden shadow-inner mb-6 border border-gray-300"
                             >
+                                {/* If mapVideoUrl is empty, it will fall through to the image tag */}
                                 {currentDestinationObject?.mapVideoUrl ? (
                                     <video
                                         src={currentDestinationObject.mapVideoUrl}
                                         alt={`Video map of ${selectedDestination}`}
-                                        className="w-full h-full object-contain" // Reverted to object-contain
+                                        className="w-full h-full object-contain"
                                         autoPlay
                                         loop
                                         muted
@@ -576,13 +576,13 @@ const App = () => {
                                         onError={(e) => {
                                             console.error(`Error loading video for ${selectedDestination}:`, e.target.src);
                                             e.target.onerror = null;
-                                            // Fallback to placeholder image if video fails
+                                            // Fallback to placeholder image if video fails or is empty
                                             e.target.src = "https://placehold.co/800x400/DDEEFF/336699?text=Video+Map+Error";
                                         }}
                                     />
                                 ) : (
                                     <img
-                                        src={currentDestinationObject?.mapImageUrl || 'https://placehold.co/800x400/DDEEFF/336699?text=Map+Not+Available'}
+                                        src={`https://placehold.co/800x400/DDEEFF/336699?text=Map+of+${encodeURIComponent(selectedDestination)}`}
                                         alt={`Map of ${selectedDestination}`}
                                         className="w-full h-full object-contain"
                                         onError={(e) => {
@@ -592,7 +592,7 @@ const App = () => {
                                         }}
                                     />
                                 )}
-                                 {/* Animated Marker (Person Icon) */}
+                                   {/* Animated Marker (Person Icon) */}
                                 {showAnimatedMarker && mapDimensions.width > 0 && mapDimensions.height > 0 && currentDestinationObject?.pathCoordinates?.length > 0 && (
                                     <div
                                         className="absolute bg-red-500 rounded-full border-2 border-white shadow-lg z-20 flex items-center justify-center"
@@ -632,7 +632,7 @@ const App = () => {
                                 {navigationSteps.map((step, index) => (
                                     <li key={index} className="text-gray-800 text-lg leading-relaxed">
                                         {step}
-                                     </li>
+                                    </li>
                                 ))}
                             </ul>
                             {/* "Back to All Buildings" button added back */}
